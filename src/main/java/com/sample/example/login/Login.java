@@ -81,9 +81,5 @@ public class Login {
 		return "Login [passportno=" + passportno + ", birthday=" + birthday + ", institute=" + institute
 				+ ", studentid=" + studentid + ", department=" + department + ", major=" + major + "]";
 	}
-	
-	
-	
-	
-	
+
 }

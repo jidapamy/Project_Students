@@ -14,7 +14,7 @@ p {
 .leftcontact {
     width: 49.5%;
     float: left;
-    border-right: 0.5px dotted #6f6f6f;
+    /*  border-right: 0.5px dotted #6f6f6f; */
     box-sizing: border-box;
     padding: 0px 15px 0px 0px;
 }
@@ -26,21 +26,23 @@ p {
   padding: 0px 0px 0px 15px;
  
 }
-.rightcontact_path2 {
-  margin-top:0.6%;
+.rightcontactForm3 {
+  margin-top:5.8%;
   width:49.5%;
   float:right;
   box-sizing: border-box;
   padding: 0px 0px 0px 15px;
  
 }
+
+
 /* element.style {
     width: 300%;
     height: 100%;
 } */
 body {
   margin: auto;
-  background: #00ccff;  
+  background: #1E93B4;  
   font-family: 'Open Sans', sans-serif;
 
 }
@@ -57,7 +59,8 @@ body {
 
     position: absolute;
     left:25%;
-    border-right: 1px dotted #6f6f6f;
+    
+    /* border-right: 1px dotted #6f6f6f; */
 }
 .form-style-5 fieldset{
     border: none;
@@ -116,7 +119,7 @@ body {
     height:35px;
 }
 .form-style-5 .number {
-    background: #1abc9c;
+    background: #0BB3E2;
     color: #fff;
     height: 30px;
     width: 30px;
@@ -138,18 +141,22 @@ body {
     display: block;
     padding: 19px 39px 18px 39px;
     color: #FFF;
-    margin: 0 auto;
-    background: #1abc9c;
+    margin: 20px auto;
+    background: #0DBBEC;
     font-size: 18px;
     text-align: center;
     font-style: normal;
-    width: 100%;
-    border: 1px solid #16a085;
+    width: 50%;
+    border-radius: 13px;
+    border: 1px solid #0A99C1;
     border-width: 1px 1px 3px;
     margin-bottom: 10px;
 }
 .form-style-5 input[type="submit"]:hover,
 .form-style-5 input[type="button"]:hover
 {
-    background: #109177;
+    background: #0A99C1;
 }
+
+
+

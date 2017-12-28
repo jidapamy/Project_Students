@@ -7,7 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>Result</h3>
-	<p>${university}</p>
+	<form action="">
+		<select required>
+			<option value="">-- เลือกตำบล --</option>
+			<option value="ประชาอุทิศ">ประชาอุทิศ</option>
+			<option value="สุขใจ">สุขใจ</option>
+		</select>
+		<input type="submit">
+	</form>
 </body>
 </html>

@@ -8,9 +8,8 @@
 </head>
 
 <body>
-	  <% String type = (String) request.getParameter("type") ;
-	  	if(type=="Thai") { 
-	  	%>
+<%-- 	  <% String type = (String) request.getParameter("type") ;
+	  	if(type=="Thai"){%> --%>
 	         <form action="submit" method="post" modelAttribute="managementForm">
      <fieldset>
       <legend><span class="number">1</span>ข้อมูลส่วนตัว</legend>
@@ -122,7 +121,7 @@
 				      		<td><p>อำเภอ</p></td>
 				      		<td><input type="text" name="m_Distinct" placeholder="Your Name *" value="${infoStudent.getM_Distinct()}"></td>
 				      		<td><p>จังหวัด</p></td>
-				      		<td><input type="text" name="m_Provinct" placeholder="Your Name *" value="${infoStudent.getM_Provinct()}"></td>
+				      		<td><input type="text" name="m_Province" placeholder="Your Name *" value="${infoStudent.getM_Province()}"></td>
 				      	</tr>
 				      	<tr>
 				      		<td><p>รหัสไปรษณีย์</p></td>
@@ -137,8 +136,7 @@
      </table>
      <input type="submit" value="Submit" />
     </form> 
-    <%
-    }
+  <%--   <%}
 	  else{
 	  %>
 	        <form action="submit" method="post" modelAttribute="managementForm">
@@ -246,7 +244,7 @@
 				      		<td><p>Distinct</p></td>
 				      		<td><input type="text" name="m_Distinct" placeholder="Your Name *" value="${infoStudent.getM_Distinct()}"></td>
 				      		<td><p>Province</p></td>
-				      		<td><input type="text" name="m_Provinct" placeholder="Your Name *" value="${infoStudent.getM_Provinct()}"></td>
+				      		<td><input type="text" name="m_Province" placeholder="Your Name *" value="${infoStudent.getM_Province()}"></td>
 				      	</tr>
 				      	<tr>
 				      		<td><p>PostalCode</p></td>
@@ -262,10 +260,7 @@
      </table>
      <input type="submit" value="Submit" />
     </form> 
-    <%
-    		} 
-    %>
-
+    <% } %> --%>
 
 
 	

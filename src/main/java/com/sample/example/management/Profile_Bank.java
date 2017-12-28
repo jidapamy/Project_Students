@@ -1,5 +1,7 @@
 package com.sample.example.management;
 
+//import java.util.Date;
+
 import java.sql.Date;
 
 import javax.persistence.Entity;
@@ -30,15 +32,15 @@ public class Profile_Bank {
 	private String tel;
 	private String nationality;
 	private String l_Address;
-	private String l_Subdistinct;
-	private String l_Distinct;
-	private String l_Province;
+	private int l_Subdistrict;
+	private int l_District;
+	private int l_Province;
 	private String l_Postalcode;
 	private String l_Country;
 	private String m_Address;
-	private String m_Subdistinct;
-	private String m_Distinct;
-	private String m_Provinct;
+	private int m_Subdistrict;
+	private int m_District;
+	private int m_Province;
 	private String m_Postalcode;
 	private String m_Country;
 	
@@ -54,12 +56,14 @@ public class Profile_Bank {
 		this.major = studentLogin.getMajor();
 	}
 
+	
+
 	public Profile_Bank(String passportno, Date birthday, String institute, String studentid, String department,
-			String major, Date issuedDate, Date expiredDate, String title_Th, String title, String name_Th, String name,
-			String surname_Th, String surname, String sex, String bloodGroup, String tel, String nationality,
-			String l_Address, String l_SubDistinct, String l_Distinct, String l_Province, String l_PostalCode,
-			String l_Country, String m_Address, String m_SubDistinct, String m_Distinct, String m_Provinct,
-			String m_PostalCode, String m_Country) {
+			String major, Date issueddate, Date expireddate, String title_Th, String title, String name_Th, String name,
+			String surname_Th, String surname, String sex, String bloodgroup, String tel, String nationality,
+			String l_Address, int l_Subdistrict, int l_District, int l_Province, String l_Postalcode, String l_Country,
+			String m_Address, int m_Subdistrict, int m_District, int m_Province, String m_Postalcode,
+			String m_Country) {
 		super();
 		this.passportno = passportno;
 		this.birthday = birthday;
@@ -67,8 +71,8 @@ public class Profile_Bank {
 		this.studentid = studentid;
 		this.department = department;
 		this.major = major;
-		this.issueddate = issuedDate;
-		this.expireddate = expiredDate;
+		this.issueddate = issueddate;
+		this.expireddate = expireddate;
 		this.title_Th = title_Th;
 		this.title = title;
 		this.name_Th = name_Th;
@@ -76,20 +80,20 @@ public class Profile_Bank {
 		this.surname_Th = surname_Th;
 		this.surname = surname;
 		this.sex = sex;
-		this.bloodgroup = bloodGroup;
+		this.bloodgroup = bloodgroup;
 		this.tel = tel;
 		this.nationality = nationality;
 		this.l_Address = l_Address;
-		this.l_Subdistinct = l_SubDistinct;
-		this.l_Distinct = l_Distinct;
+		this.l_Subdistrict = l_Subdistrict;
+		this.l_District = l_District;
 		this.l_Province = l_Province;
-		this.l_Postalcode = l_PostalCode;
+		this.l_Postalcode = l_Postalcode;
 		this.l_Country = l_Country;
 		this.m_Address = m_Address;
-		this.m_Subdistinct = m_SubDistinct;
-		this.m_Distinct = m_Distinct;
-		this.m_Provinct = m_Provinct;
-		this.m_Postalcode = m_PostalCode;
+		this.m_Subdistrict = m_Subdistrict;
+		this.m_District = m_District;
+		this.m_Province = m_Province;
+		this.m_Postalcode = m_Postalcode;
 		this.m_Country = m_Country;
 	}
 
@@ -217,8 +221,8 @@ public class Profile_Bank {
 		return bloodgroup;
 	}
 
-	public void setBloodGroup(String bloodGroup) {
-		this.bloodgroup = bloodGroup;
+	public void setBloodGroup(String bloodgroup) {
+		this.bloodgroup = bloodgroup;
 	}
 
 	public String getTel() {
@@ -245,27 +249,27 @@ public class Profile_Bank {
 		this.l_Address = l_Address;
 	}
 
-	public String getL_SubDistinct() {
-		return l_Subdistinct;
+	public int getL_SubDistrict() {
+		return l_Subdistrict;
 	}
 
-	public void setL_SubDistinct(String l_SubDistinct) {
-		this.l_Subdistinct = l_SubDistinct;
+	public void setL_SubDistrict(int l_SubDistrict) {
+		this.l_Subdistrict = l_SubDistrict;
 	}
 
-	public String getL_Distinct() {
-		return l_Distinct;
+	public int getL_District() {
+		return l_District;
 	}
 
-	public void setL_Distinct(String l_Distinct) {
-		this.l_Distinct = l_Distinct;
+	public void setL_District(int l_District) {
+		this.l_District = l_District;
 	}
 
-	public String getL_Province() {
+	public int getL_Province() {
 		return l_Province;
 	}
 
-	public void setL_Province(String l_Province) {
+	public void setL_Province(int l_Province) {
 		this.l_Province = l_Province;
 	}
 
@@ -293,28 +297,28 @@ public class Profile_Bank {
 		this.m_Address = m_Address;
 	}
 
-	public String getM_SubDistinct() {
-		return m_Subdistinct;
+	public int getM_SubDistrict() {
+		return m_Subdistrict;
 	}
 
-	public void setM_SubDistinct(String m_SubDistinct) {
-		this.m_Subdistinct = m_SubDistinct;
+	public void setM_SubDistrict(int m_SubDistrict) {
+		this.m_Subdistrict = m_SubDistrict;
 	}
 
-	public String getM_Distinct() {
-		return m_Distinct;
+	public int getM_District() {
+		return m_District;
 	}
 
-	public void setM_Distinct(String m_Distinct) {
-		this.m_Distinct = m_Distinct;
+	public void setM_District(int m_District) {
+		this.m_District = m_District;
 	}
 
-	public String getM_Provinct() {
-		return m_Provinct;
+	public int getM_Province() {
+		return m_Province;
 	}
 
-	public void setM_Provinct(String m_Provinct) {
-		this.m_Provinct = m_Provinct;
+	public void setM_Province(int m_Province) {
+		this.m_Province = m_Province;
 	}
 
 	public String getM_PostalCode() {
@@ -333,41 +337,6 @@ public class Profile_Bank {
 		this.m_Country = m_Country;
 	}
 	
-	public void resetToDefault() {
-		Profile_Bank infoStudent = new Profile_Bank();
-		infoStudent.setBirthday(birthday);
-		infoStudent.setBloodGroup("");
-		infoStudent.setDepartment(department);
-		infoStudent.setExpiredDate(expireddate);
-		infoStudent.setInstitute(institute);
-		infoStudent.setIssuedDate(issueddate);
-		infoStudent.setL_Address("");
-		infoStudent.setL_Country("");
-		infoStudent.setL_Distinct("");
-		infoStudent.setL_PostalCode("");
-		infoStudent.setL_Province("");
-		infoStudent.setL_SubDistinct("");
-		infoStudent.setM_Address("");
-		infoStudent.setM_Country("");
-		infoStudent.setM_Distinct("");
-		infoStudent.setM_PostalCode("");
-		infoStudent.setM_Provinct("");
-		infoStudent.setM_SubDistinct("");
-		infoStudent.setMajor(major);
-		infoStudent.setName("");
-		infoStudent.setName_Th("");
-		infoStudent.setNationality("");
-		infoStudent.setPassportno(passportno);
-		infoStudent.setSex("");
-		infoStudent.setStudentid(studentid);
-		infoStudent.setSurname("");
-		infoStudent.setSurname_Th("");
-		infoStudent.setTel("");
-		infoStudent.setTitle("");
-		infoStudent.setTitle_Th("");
-	}
-	
-	
 
 	@Override
 	public String toString() {
@@ -375,11 +344,11 @@ public class Profile_Bank {
 				+ ", studentid=" + studentid + ", department=" + department + ", major=" + major + ", issuedDate="
 				+ issueddate + ", expiredDate=" + expireddate + ", title_Th=" + title_Th + ", title=" + title
 				+ ", name_Th=" + name_Th + ", name=" + name + ", surname_Th=" + surname_Th + ", surname=" + surname
-				+ ", sex=" + sex + ", bloodGroup=" + bloodgroup + ", tel=" + tel + ", nationality=" + nationality
-				+ ", l_Address=" + l_Address + ", l_SubDistinct=" + l_Subdistinct + ", l_Distinct=" + l_Distinct
+				+ ", sex=" + sex + ", bloodgroup=" + bloodgroup + ", tel=" + tel + ", nationality=" + nationality
+				+ ", l_Address=" + l_Address + ", l_SubDistrict=" + l_Subdistrict + ", l_District=" + l_District
 				+ ", l_Province=" + l_Province + ", l_PostalCode=" + l_Postalcode + ", l_Country=" + l_Country
-				+ ", m_Address=" + m_Address + ", m_SubDistinct=" + m_Subdistinct + ", m_Distinct=" + m_Distinct
-				+ ", m_Provinct=" + m_Provinct + ", m_PostalCode=" + m_Postalcode + ", m_Country=" + m_Country + "]";
+				+ ", m_Address=" + m_Address + ", m_SubDistrict=" + m_Subdistrict + ", m_District=" + m_District
+				+ ", m_Province=" + m_Province + ", m_PostalCode=" + m_Postalcode + ", m_Country=" + m_Country + "]";
 	}
 
 	
